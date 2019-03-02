@@ -3,31 +3,257 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 50vmin;
   pointer-events: none;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ------------------------------------------- */
+.carTago{
+  height: 30vh;
+  width: 30vh;
+  border: 5px solid black;
+  background-color: rgba(255, 217, 0, 0.253);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.centeR{
+  font-size: 20vh;
+  color: black;
+  margin-top: -7vh;
+}
+
+.disckT{
+  height: 25vh;
+  width: 25vh;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-image: url("./images/piiste.jpg");
+  background-image: -webkit-linear-gradient url("./images/piiste.jpg");
+  background-image: -moz-linear-gradient url("./images/piiste.jpg");
+  background-image: -ms-linear-gradient url("./images/piiste.jpg");
+  background-image: -o-linear-gradient url("./images/piiste.jpg");
+  background-repeat: no-repeat;
+  background-size: 25vh 25vh;
+  animation-name: App-disck-spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  -webkit-animation-name: App-disck-spin; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s;
+  -moz-animation-name: App-disck-spin;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-duration: 20s;
+  -ms-animation-name: App-disck-spin;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -ms-animation-duration: 20s;
+  -o-animation-name: App-disck-spin;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  -o-animation-duration: 20s;
+}
+
+@keyframes App-disck-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+ @-webkit-keyframes App-disck-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@-moz-keyframes App-disck-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-ms-keyframes App-disck-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-o-keyframes App-disck-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* ------------------------------------------- */
+
+#theKroi{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 40px
   }
-  to {
-    transform: rotate(360deg);
+
+.App-modal {
+  background-color: #282c34;
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: gold;
+}
+/* ------------------------------------------- */
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: #61dafb;
+}
+.lumine-size {
+  font-size: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.lumine {
+  animation-name: luminos;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  -webkit-animation-name: luminos; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 15s; /* Safari 4.0 - 8.0 */
+  -moz-animation-name: luminos; /* Safari 4.0 - 8.0 */
+  -moz-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -moz-animation-duration: 15s;
+  -ms-animation-name: luminos; /* Safari 4.0 - 8.0 */
+  -ms-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -ms-animation-duration: 15s;
+  -o-animation-name: luminos; /* Safari 4.0 - 8.0 */
+  -o-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -o-animation-duration: 15s;
+}
+
+/* Standard syntax */
+@keyframes luminos {
+0%   { color: ivory;}
+25%  { color: red;}
+50%  { color: ivory;}
+75%  { color: green;}
+100% { color: ivory;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes luminos {
+  0%   { color: grey;}
+  25%  { color: red;}
+  50%  { color: ivory;}
+  75%  { color: green;}
+  100% { color: grey;}
+}
+
+@-moz-keyframes luminos {
+  0%   { color: ivory;}
+  25%  { color: red;}
+  50%  { color: ivory;}
+  75%  { color: green;}
+  100% { color: ivory;}
+}
+
+@-ms-keyframes luminos {
+  0%   { color: ivory;}
+  25%  { color: red;}
+  50%  { color: ivory;}
+  75%  { color: green;}
+  100% { color: ivory;}
+}
+
+@-o-keyframes luminos {
+  0%   { color: ivory;}
+  25%  { color: red;}
+  50%  { color: ivory;}
+  75%  { color: green;}
+  100% { color: ivory;}
+}
+
+/* ------------------------------------------- */
+.footin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 50vh;
+  padding-top: 20px;
+  border-radius: 5px;
+  margin: 2vh;
+  border: 5px solid rgba(32, 197, 59, 0.5);
+  background-image: url("./images/ArkAnSyel.jpg");
+  background-image: -webkit-linear-gradient url("./images/ArkAnSyel.jpg");
+  background-image: -moz-linear-gradient url("./images/ArkAnSyel.jpg");
+  background-image: -ms-linear-gradient url("./images/ArkAnSyel.jpg");
+  background-image: -o-linear-gradient url("./images/ArkAnSyel.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.profiL{
+  height: 22vh;
+  width: 22vh;
+  border: 5px solid rgba(32, 197, 59, 0.5);
+}
+.profiLIMG{
+  height: 100%;
+  width: 100%;
+}
+.allPark{
+  background-color: #282c34;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5vh;
+  width: 99.7%;
+  border: 2px solid rgba(32, 197, 59, 0.5);
+}
+/* ------------------------------------------- */
+@media (max-width:450px){
+  .allPark{
+    background-color: #3266ce;
   }
 }
+@media (max-width:350px){
+  .allPark{
+    background-color: #e2492e;
+  }
+}
+@media (max-width:600px){
+  .allPark{
+    background-color: #d878c8;
+  }
+}
+@media (max-width:800px){
+  .allPark{
+    background-color: #79299e;
+  }
+}
+/* ------------------------------------------- */
+.App-center-blok{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ------------------------------------------- */
